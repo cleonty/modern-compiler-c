@@ -13,3 +13,7 @@ return
               A_OpExp(A_NumExp(10), A_times, A_IdExp("a")))),
    A_PrintStm(A_LastExpList(A_IdExp("b")))));
 }
+
+// a = 5 + 3; // 8
+// b = print(a, a - 1), 10 * a; // 80
+// print(b);
