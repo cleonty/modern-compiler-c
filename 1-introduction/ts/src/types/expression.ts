@@ -1,4 +1,3 @@
-import { Expression, ExpressionLast } from './expression';
 import { Statement } from './statement';
 
 export type ExpressionKind = 'IdExpression' | 'NumExpression' | 'OpExpression' | 'EseqExpression';

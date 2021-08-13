@@ -1,4 +1,3 @@
-import { CompoundStatement, AssignStatement, PrintStatement } from './statement';
 import { Expression, ExpressionList } from "./expression";
 
 export type StatementKind = 'CompoundStatement' | 'AssignStatement' | 'PrintStatement';
