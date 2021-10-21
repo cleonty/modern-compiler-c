@@ -139,7 +139,6 @@ typedef union YYSTYPE
 /* Line 1676 of yacc.c  */
 #line 19 "tiger.grm"
 
-	int pos;
 	int ival;
 	string sval;
 	A_var var;
@@ -149,7 +148,7 @@ typedef union YYSTYPE
 
 
 /* Line 1676 of yacc.c  */
-#line 153 "y.tab.h"
+#line 152 "y.tab.h"
 } YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */

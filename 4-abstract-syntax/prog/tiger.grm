@@ -11,13 +11,12 @@ A_exp absyn_root;
 
 void yyerror(char *s)
 {
- EM_error(EM_tokPos, "%s", s);
+ EM_error("%s", s);
 }
 %}
 
 
 %union {
-	int pos;
 	int ival;
 	string sval;
 	A_var var;
@@ -46,7 +45,7 @@ void yyerror(char *s)
 
 program:   exp    {absyn_root=$1;}
 
-exp:   ID         {$$=A_VarExp(EM_tokPos,A_SimpleVar(EM_tokPos,S_Symbol($1)));}
+exp:   ID         {$$=A_VarExp(A_SimpleVar(S_Symbol($1)));}
 
 
 
